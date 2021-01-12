@@ -42,7 +42,7 @@ parser.add_argument('--selected_TOIs_folder', type=str, default='data/TKS/', hel
 parser.add_argument('--include_qlp', type=str, default='False', help='Include QLP TOIs in ranking algorithm?')
 parser.add_argument('--verbose', type=str, default='True', help='Print additional messages during target list generation?')
 parser.add_argument('--num_to_rank', type=str, default='5', help='Number of targets to assign priorities to per bin.')
-parser.add_argument('--k_amp_cut', type=float, default=2., help='Minimum expected K-amplitude that targets must have to make the final list.')
+parser.add_argument('--k_amp_cut', type=float, default=0., help='Minimum expected K-amplitude that targets must have to make the final list.')
 parser.add_argument('--min_TSM', type=float, default=0., help='Minimum TSM value that targets must have to make the final list.')
 
 def save_to_csv(df, save_fname, save_folder):
